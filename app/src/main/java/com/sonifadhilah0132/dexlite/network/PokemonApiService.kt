@@ -34,3 +34,5 @@ object PokemonApi {
     }
 
 }
+
+enum class ApiStatus { LOADING, SUCCESS }
