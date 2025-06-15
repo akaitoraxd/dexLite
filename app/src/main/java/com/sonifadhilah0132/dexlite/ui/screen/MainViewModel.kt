@@ -19,6 +19,9 @@ class MainViewModel: ViewModel() {
     var status = MutableStateFlow(ApiStatus.LOADING)
         private set
 
+    var errorMessage = mutableStateOf<String?>(null)
+        private set
+
     init {
         retrieveRandomPokemon()
     }
@@ -45,4 +48,6 @@ class MainViewModel: ViewModel() {
             }
         }
     }
+
+    fun clearMessage() { errorMessage.value = null}
 }

@@ -4,4 +4,7 @@
     <string name="sprite">Pokemon %1$s</string>
     <string name="error">Failed to load data. Connection Error.</string>
     <string name="try_again">Try again</string>
+    <string name="profile">Profile</string>
+    <string name="close">Close</string>
+    <string name="logout">Log-Out</string>
 </resources>
