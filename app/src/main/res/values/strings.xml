@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DexLite</string>
+    <string name="name">Name</string>
+    <string name="sprite">Pokemon %1$s</string>
+    <string name="error">Failed to load data. Connection Error.</string>
+    <string name="try_again">Try again</string>
 </resources>

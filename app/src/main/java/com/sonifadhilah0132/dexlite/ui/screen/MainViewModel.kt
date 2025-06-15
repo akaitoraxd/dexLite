@@ -33,7 +33,7 @@ class MainViewModel: ViewModel() {
         }
     }
 
-    private fun retrieveRandomPokemon() {
+    fun retrieveRandomPokemon() {
         viewModelScope.launch(Dispatchers.IO) {
             status.value = ApiStatus.LOADING
             try {
@@ -41,6 +41,7 @@ class MainViewModel: ViewModel() {
                 status.value = ApiStatus.SUCCESS
             } catch (e: Exception) {
                 Log.d("MainViewModelRandom", "Success: ${e.message}")
+                status.value = ApiStatus.FAILED
             }
         }
     }
